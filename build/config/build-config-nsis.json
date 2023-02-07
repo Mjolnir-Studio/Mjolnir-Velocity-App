@@ -1,0 +1,38 @@
+{
+    "productName": "Mjolnir Velocity",
+    "appId": "com.mjolnirstudio.velocity",
+    "artifactName": "${productName} Installer.${ext}",
+    "copyright": "Copyright © 2023 ${author}",
+    "asar": true,
+    "afterPack": "./build/lib/asarmor.js",
+    "npmRebuild": false,
+    "icon": "./app/assets/logo.ico",
+    "compression": "maximum",
+    "files": 
+    [
+      "node_modules",
+      "app",
+      "index.js",
+      "package.json"
+    ],
+    "publish": 
+    [
+      {
+        "provider": "github",
+        "owner": "Mjolnir-Studio",
+        "repo": "Mjolnir-Velocity",
+        "releaseType": "draft",
+        "publishAutoUpdate": true
+      }
+    ],
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "icon": "./app/assets/logo.ico"
+    },
+    "nsis": 
+    {
+      "oneClick": true
+    }
+  }

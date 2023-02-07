@@ -1,0 +1,23 @@
+{
+  "name": "mjolnir-velocity",
+  "productName": "Mjolnir Velocity",
+  "version": "9.9.9",
+  "description": "A modern 3rd-party software used for Riot Games.",
+  "main": "index.js",
+  "scripts": {
+    "<<<<<>>>>>": "CI/CD用的，全自動打包",
+    "build-squirrel": "node ./build/build.js",
+    "release-squirrel": "node ./build/release_build.js",
+    "<<<<<.>>>>>": "下面的只是打包時所需要的環境變數",
+    "bash-build-nsis": "electron-builder --config ./build/config/build-config-nsis.json",
+    "bash-release-nsis": "electron-builder --config ./build/config/build-config-nsis.json -w -p always"
+  },
+  "author": "Mjolnir Studio",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "asarmor": "^2.1.0-beta.10",
+    "electron": "^19.0.8",
+    "electron-builder": "^23.1.0",
+    "electron-reload": "^2.0.0-alpha.1"
+  }
+}
