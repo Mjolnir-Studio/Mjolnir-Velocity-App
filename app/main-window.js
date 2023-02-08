@@ -2,7 +2,7 @@
 const { app, BrowserWindow } = require("electron");
 
 // Create some window settings
-splash = new BrowserWindow
+main = new BrowserWindow
 ({
     // 窗口標題
     // 如果HTML標籤 <title> 在由...加載的HTML文件中定義 loadURL(), 此屬性將被忽略。
@@ -11,9 +11,9 @@ splash = new BrowserWindow
     // darkTheme : true,
     // 透明人間 0.0(完全透明) ~ 1.0 (完全不透明)
     // opacity: 1.0,
-    show: true,
+    show: false,
         // if show false, paintWhenInitiallyHidden need false too
-        // paintWhenInitiallyHidden: true,
+        paintWhenInitiallyHidden: false,
     // 指定父窗口
     // parent: null,
     width: 300, height: 400,
@@ -26,9 +26,9 @@ splash = new BrowserWindow
     // 視窗是否有陰影
     // hasShadow: true,
     // 在Screen中央顯示
-    center: true,
+    // center: true,
     // 窗口是否不想要成為無邊框視窗?
-    frame: false,
+    frame: true,
         // if frame false, 在Windows上,除非窗口無框,否則無法工作。
         // transparent: true,
     // 窗口是否可調整
@@ -40,7 +40,7 @@ splash = new BrowserWindow
     // if focusable is false, skipTaskbar will false too    
     // skipTaskbar: false, // MacOS Windows
     // 窗口是否在最上層
-    alwaysOnTop: false,
+    // alwaysOnTop: false,
     // 窗口是否可關閉-標題列的 (MacOS Windows)
     // closable: true,
     // 窗口是否可最小化-標題列的 (MacOS Windows)

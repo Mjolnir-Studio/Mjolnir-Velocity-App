@@ -1,4 +1,4 @@
-const {ipcMain} = require('electron');
+const { ipcMain } = require('electron');
 
 
 ipcMain.on("toMain", async (event, args) => {

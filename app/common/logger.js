@@ -1,7 +1,5 @@
 "use strict";
 // Electron Logger
-const electronLogger = require('electron-log');
-const path = require('path');
 
 global.nowtimes = function(flags){
     let date = new Date();

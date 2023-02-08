@@ -1,5 +1,4 @@
 const {autoUpdater} = require("electron-updater");
-const electronLogger = require('electron-log');
 
 autoUpdater.checkForUpdatesAndNotify();
 // autoUpdater

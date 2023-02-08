@@ -24,7 +24,7 @@ app.whenReady().then(async () => {
         }else{
             console.warn("[INFO] Dev mode - Skip Check updater");
             // splash.webContents.send('update_status',`123`);
-            require('./common/updater.js');
+            // require('./common/updater.js');
             // msgbox.error(splash, productName + " - Updater error", "error", "X _ X", "Skip this time Updater.\nUpdater guess Github may some issue", false);
             // splash.webContents.send('update_status', `${i.__('Update Error webContents')}`);
         }
