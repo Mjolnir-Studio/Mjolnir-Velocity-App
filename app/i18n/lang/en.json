@@ -8,7 +8,7 @@
     "Download progress: %s %": "Download progress: %s %",
     "Downloading... %s %": "Download file progress: %s %",
     "Update downloaded": "Automatic restart of Mjolnir League after update",
-    "Update downloaded webContents": "Automatic restart of Mjolnir League after update",
+    "Update downloaded webContents": "Apply update restart...",
     "Update Error": "An error occurred while checking for updates.",
 	"Update Error webContents": "update error. Please check the log file.",
     "Go Discord to Report this issue": "Head over to the Mjolnir Discord to report this issue"

@@ -9,7 +9,7 @@ const i18n = new I18n({
     tw: require('./lang/zh-TW.json'),
     en: require('./lang/en.json'),
   },
-  defaultLocale: 'en'
+  defaultLocale: 'tw'
 });
 
 module.exports = i18n;
