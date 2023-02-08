@@ -3,6 +3,7 @@ const { app } = require('electron');
 const { BrowserWindow } = require("electron");
 const nodepackage = require('../package.json');
 const productName = nodepackage.productName;
+const path = require("path");
 
 // Create some window settings
 splash = new BrowserWindow
@@ -57,7 +58,8 @@ splash = new BrowserWindow
     autoHideMenuBar: true,
     webPreferences: {
         devTools: !app.isPackaged,
-        preload: "./splash-preload.js",
+        // preload: "./splash-preload.js",
+        preload: path.join(__dirname, 'splash-preload.js'),
             // Node 關閉不安全的 API
             nodeIntegration: false,
                 // 通常　nodeIntegration 值是多少 nodeIntegrationInSubFrames 值就是多少
