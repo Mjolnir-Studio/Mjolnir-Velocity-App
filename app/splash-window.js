@@ -1,8 +1,6 @@
 "use strict";
 const { app } = require('electron');
 const { BrowserWindow } = require("electron");
-const nodepackage = require('../package.json');
-const productName = nodepackage.productName;
 const path = require("path");
 
 // Create some window settings
