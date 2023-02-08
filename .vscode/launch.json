@@ -12,6 +12,22 @@
         },
         "program": "${workspaceRoot}/index.js",
         "protocol": "inspector"
+      },
+      {
+        "name": "(Build) 軟體",
+        "type": "node",
+        "request": "launch",
+        "cwd": "${workspaceRoot}",
+        "program": "${workspaceRoot}/build/build.js",
+        "protocol": "inspector"
+      },
+      {
+        "name": "(Release) 軟體",
+        "type": "node",
+        "request": "launch",
+        "cwd": "${workspaceRoot}",
+        "program": "${workspaceRoot}/build/release_build.js",
+        "protocol": "inspector"
       }
     ]
   }
