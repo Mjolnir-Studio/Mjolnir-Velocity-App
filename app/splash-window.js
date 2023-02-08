@@ -54,7 +54,6 @@ splash = new BrowserWindow
     autoHideMenuBar: true,
     webPreferences: {
         devTools: !app.isPackaged,
-        // preload: "./splash-preload.js",
         preload: path.join(__dirname, 'splash-preload.js'),
             // Node 關閉不安全的 API
             nodeIntegration: false,

@@ -7,7 +7,7 @@ main = new BrowserWindow
     // 窗口標題
     // 如果HTML標籤 <title> 在由...加載的HTML文件中定義 loadURL(), 此屬性將被忽略。
     title: productName,
-    icon: './app/splash/favicon.ico',
+    icon: './app/main/favicon.ico',
     // darkTheme : true,
     // 透明人間 0.0(完全透明) ~ 1.0 (完全不透明)
     // opacity: 1.0,
@@ -54,8 +54,7 @@ main = new BrowserWindow
     autoHideMenuBar: true,
     webPreferences: {
         devTools: !app.isPackaged,
-        // preload: "./splash-preload.js",
-        preload: path.join(__dirname, 'splash-preload.js'),
+        preload: path.join(__dirname, 'main-preload.js'),
             // Node 關閉不安全的 API
             nodeIntegration: false,
                 // 通常　nodeIntegration 值是多少 nodeIntegrationInSubFrames 值就是多少
@@ -68,8 +67,8 @@ main = new BrowserWindow
     }
 });
 
-splash.loadFile('./app/splash/index.html');
-splash.setMenu(null);
-splash.center();
+main.loadURL(`https://mjolnir.yomisana.xyz/app/velocity/`);
+main.setMenu(null);
+// main.center();
 if(!app.isPackaged)
-    splash.webContents.openDevTools();
+    main.webContents.openDevTools();
