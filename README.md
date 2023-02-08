@@ -3,7 +3,7 @@
   <img alt="Release" src="https://img.shields.io/github/v/release/Mjolnir-Studio/Mjolnir-Velocity.png?" />
   <img alt="Release_Downloads" src="https://img.shields.io/github/downloads/Mjolnir-Studio/Mjolnir-Velocity/total.png?" />
   <img alt="Discord" src="https://img.shields.io/static/v1?&message=Discord&color=5865F2&logo=Discord&logoColor=FFFFFF&label=Mjolnir+Studio" />
-  <img alt="Discord" src="https://img.shields.io/static/v1?&message=Windows&color=0078D6&logo=Windows&logoColor=FFFFFF&label=7%2B(x64)" />
+  <img alt="Support_System_Windows" src="https://img.shields.io/static/v1?&message=Windows&color=0078D6&logo=Windows&logoColor=FFFFFF&label=7~10%2B(x64)" />
   <!-- <a href="docsnot" target="_blank">
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
   </a> -->
