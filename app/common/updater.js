@@ -17,7 +17,7 @@ autoUpdater.on('update-available', (info) => {
 
 autoUpdater.on('update-not-available', (info) => {
     console.log('[INFO] No new version available.');
-    splash.webContents.send('update_status', lang.express.SPLASH_STARTING);
+    splash.webContents.send('update_status',`${i.__('Update is latest. webContents')}`);
     let AppReadyTimer = setInterval(()=>{
         if(mainWindowReady && isTranslated){
           clearInterval(AppReadyTimer);
@@ -37,7 +37,7 @@ autoUpdater.on('update-not-available', (info) => {
 
 autoUpdater.on('error', (err) => {
     console.warn(`[WARN] Updater Error: Reason ${err}`);
-    splash.webContents.send('update_status', lang.express.SPLASH_UPDATING_ERROR);
+    splash.webContents.send('update_status',`${i.__('Update Error webContents')}`);
     msgbox.error(splash, productName + " - Updater error", "error", "X _ X", "Skip this time Updater.\nUpdater guess Github may some issue", false);
 });
 
