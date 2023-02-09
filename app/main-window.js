@@ -1,6 +1,6 @@
 "use strict";
 const { app, BrowserWindow } = require("electron");
-
+require('./ipcMain'); 
 // Create some window settings
 main = new BrowserWindow
 ({
@@ -55,8 +55,15 @@ main = new BrowserWindow
     webPreferences: {
         devTools: !app.isPackaged,
         preload: path.join(__dirname, 'main-preload.js'),
-            // Node 關閉不安全的 API - 因為loadURL()所以需要nodeIntegration true
+            // Node 關閉不安全的 API
             nodeIntegration: false,
+                // 通常　nodeIntegration 值是多少 nodeIntegrationInSubFrames 值就是多少
+                nodeIntegrationInSubFrames: false,
+            nodeIntegrationInWorker: false,
+        // Disallow http content(cdn...etc)
+        allowRunningInsecureContent: false,
+        // 預防 前端 js 可以訪問後端的資料
+        contextIsolation: true,
     }
 });
 
@@ -66,6 +73,8 @@ main.once('ready-to-show', async () => {
     console.log(`[INFO] ${i.__('Mainwindow ready to show')}`);
     main.show();
     splash.destroy();
+
+    main.webContents.send('test',`test message or value`);
 });
 
 if(!app.isPackaged){
