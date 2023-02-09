@@ -13,7 +13,7 @@ main = new BrowserWindow
     // opacity: 1.0,
     show: true,
         // if show false, paintWhenInitiallyHidden need false too
-        paintWhenInitiallyHidden: true,
+        // paintWhenInitiallyHidden: true,
     // 指定父窗口
     // parent: null,
     width: 1280, height: 720,
@@ -55,20 +55,12 @@ main = new BrowserWindow
     webPreferences: {
         devTools: !app.isPackaged,
         preload: path.join(__dirname, 'main-preload.js'),
-            // Node 關閉不安全的 API
+            // Node 關閉不安全的 API - 因為loadURL()所以需要nodeIntegration true
             nodeIntegration: false,
-                // 通常　nodeIntegration 值是多少 nodeIntegrationInSubFrames 值就是多少
-                nodeIntegrationInSubFrames: false,
-            nodeIntegrationInWorker: false,
-        // Disallow http content(cdn...etc)
-        allowRunningInsecureContent: false,
-        // 預防 前端 js 可以訪問後端的資料
-        contextIsolation: true,
     }
 });
 
 main.loadURL(`https://mjolnir.yomisana.xyz/app/velocity/`);
-main.setMenu(null);
 // main.center();
 main.once('ready-to-show', async () => {
     console.log(`[INFO] ${i.__('Mainwindow ready to show')}`);
@@ -76,5 +68,8 @@ main.once('ready-to-show', async () => {
     splash.destroy();
 });
 
-if(!app.isPackaged)
+if(!app.isPackaged){
     main.webContents.openDevTools();
+}else{
+    main.setMenu(null);
+}
