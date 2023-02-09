@@ -18,5 +18,6 @@
     "second instance": "偵測到你嘗試開啟第二個Mjolnir League軟體!\n軟體沒有跑嗎? ( •́ _ •̀)?\n幫你呼叫視窗出來!\n如果你確定這個是Bug!請立即回報至Discord社群詢問",
     "Run as admin": "以管理員權限執行了!",
     "Not run as admin": "沒有以管理員權限執行!\n會出現這個錯誤很不尋常...請立即回報至Discord社群詢問!",
-    "Exit App": "關閉程式"
+    "Exit App": "關閉程式",
+    "Mainwindow ready to show": "主畫面準備顯示!"
 }

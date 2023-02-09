@@ -11,14 +11,14 @@ main = new BrowserWindow
     // darkTheme : true,
     // 透明人間 0.0(完全透明) ~ 1.0 (完全不透明)
     // opacity: 1.0,
-    show: false,
+    show: true,
         // if show false, paintWhenInitiallyHidden need false too
-        paintWhenInitiallyHidden: false,
+        paintWhenInitiallyHidden: true,
     // 指定父窗口
     // parent: null,
-    width: 300, height: 400,
-    minWidth: 300, minHeigh: 300,
-    maxWidth: 400, maxHeight: 400,
+    width: 1280, height: 720,
+    minWidth: 1280, minHeigh: 720,
+    maxWidth: 1280, maxHeight: 720,
     // width 和 height 將用作網絡 頁面的大小,這意味著實際窗口
     useContentSize: true,
     // Set Background Color
@@ -70,5 +70,11 @@ main = new BrowserWindow
 main.loadURL(`https://mjolnir.yomisana.xyz/app/velocity/`);
 main.setMenu(null);
 // main.center();
+main.once('ready-to-show', async () => {
+    console.log(`[INFO] ${i.__('Mainwindow ready to show')}`);
+    main.show();
+    splash.destroy();
+});
+
 if(!app.isPackaged)
     main.webContents.openDevTools();

@@ -5,6 +5,8 @@ global.productName = nodepackage.productName;
 
 // Core
 global.pid = 0, // process pid
+global.updater = null;
+global.permission = null;
 global.splash = null;
 global.main = null;
 global.permission = require('./common/permission');
@@ -12,7 +14,6 @@ global.discord_url = "http://mjolnirdc.yomisana.xyz/";
 
 // module
 global.path = require("path");
-
 // logger
 global.electronLogger = require('electron-log');
 global.log_dir = null;

@@ -78,7 +78,16 @@ splash.once('ready-to-show', async () => {
         require('./common/updater.js');
     }else{
         console.warn("[INFO] Dev mode - 略過檢查更新");
+        updater = true;
     }
+    let splashstartTimer = setInterval(()=>{
+        if(updater && permission){
+          console.warn("環境前置檢查完畢...");
+          clearInterval(splashstartTimer);
+          require('./main-window');
+        }
+    },100);
 });
-if(!app.isPackaged)
-    splash.webContents.openDevTools();
+
+// if(!app.isPackaged)
+//     splash.webContents.openDevTools();

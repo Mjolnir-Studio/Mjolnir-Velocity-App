@@ -18,27 +18,14 @@ autoUpdater.on('update-available', (info) => {
 autoUpdater.on('update-not-available', (info) => {
     console.log('[INFO] No new version available.');
     splash.webContents.send('update_status',`${i.__('Update is latest. webContents')}`);
-    let AppReadyTimer = setInterval(()=>{
-        if(mainWindowReady && isTranslated){
-          clearInterval(AppReadyTimer);
-          slashReadyToDestroyed = true;
-        //   splash.close();
-        //   main.setOpacity(1);
-        //   main.show();
-    
-        //   if(readyToShowGA4Notify){
-        //       authentication.showMessage(mjolnir_main,lang.express.GOOGLE_ANALYTICS,"info",lang.express.NOTIFY);
-        //       login_session.launcher.googleAnalytics = true;
-        //       savingSession();
-        //   }
-        }
-    },500);
+    updater = true;
 });
 
 autoUpdater.on('error', (err) => {
     console.warn(`[WARN] Updater Error: Reason ${err}`);
     splash.webContents.send('update_status',`${i.__('Update Error webContents')}`);
     msgbox.error(splash, productName + " - Updater error", "error", "X _ X", "Skip this time Updater.\nUpdater guess Github may some issue", false);
+    updater = true;
 });
 
 autoUpdater.on('download-progress', (progressObj) => {

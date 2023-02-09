@@ -8,8 +8,8 @@ log_dir = app.getPath('userData') + '\\logger';
 
 if(!app.isPackaged){
     require('electron-reload')(__dirname);
-    console.debug("[DEBUG] Dev mode - Enable electron-reload");
-    console.debug(`[DEBUG] Dev mode - log file local: ${log_dir}`);
+    console.warn("[DEBUG] Dev mode - Enable electron-reload");
+    console.warn(`[DEBUG] Dev mode - log file local: ${log_dir}`);
 }
 
 app.whenReady().then(async () => {
