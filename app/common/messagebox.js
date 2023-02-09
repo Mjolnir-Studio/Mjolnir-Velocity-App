@@ -4,6 +4,7 @@ const { app, dialog, shell } = require("electron");
 
 const $ = {
     closeApp: function(){
+        console.log("關閉程式...");
         if(pid){
             process.kill(pid);
             pid = 0;
