@@ -1,4 +1,5 @@
 {
+    "Splash Start": "啟動中...",
     "Checking for update...": "檢查是否有更新...",
     "Checking for update... webContents": "檢查是否有更新...",
     "Update available.": "有可用更新版本!",
@@ -11,5 +12,11 @@
     "Update downloaded webContents": "套用更新重啟中...",
     "Update Error": "檢查更新時發生錯誤. 請查看紀錄檔.",
 	"Update Error webContents": "更新發生錯誤! 請查看紀錄檔.",
-    "Go Discord to Report this issue": "前往 Mjolnir Discord 報告這個問題"
+    "Go Discord to Report this issue": "前往 Mjolnir Studio Discord 報告這個問題",
+    "check permission": "檢查權限中...",
+    "check permission_error": "您沒有通過權限檢查...請檢查您是否已授予應用程序管理員權限。",
+    "second instance": "偵測到你嘗試開啟第二個Mjolnir League軟體!\n軟體沒有跑嗎? ( •́ _ •̀)?\n幫你呼叫視窗出來!\n如果你確定這個是Bug!請立即回報至Discord社群詢問",
+    "Run as admin": "以管理員權限執行了!",
+    "Not run as admin": "沒有以管理員權限執行!\n會出現這個錯誤很不尋常...請立即回報至Discord社群詢問!",
+    "Exit App": "關閉程式"
 }

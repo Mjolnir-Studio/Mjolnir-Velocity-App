@@ -1,4 +1,5 @@
 {
+    "Splash Start": "starting...",
     "Checking for update...": "Check for updates...",
     "Checking for update... webContents": "Check for updates...",
     "Update available.": "An updated version is available!",
@@ -11,5 +12,11 @@
     "Update downloaded webContents": "Apply update restart...",
     "Update Error": "An error occurred while checking for updates.",
 	"Update Error webContents": "update error. Please check the log file.",
-    "Go Discord to Report this issue": "Head over to the Mjolnir Discord to report this issue"
+    "Go Discord to Report this issue": "Head over to the Mjolnir Studio Discord to report this issue",
+    "check permission": "Checking permissions...",
+    "check permission_error": " you not have pass permission check... please check are you have give app admin permission.",
+    "second instance": "Detected your attempt to start the second Mjolnir League app!\nDid the app not run? ( •́ _ •̀)?\nCall the window for you!\nIf you are sure this is a bug!Please report to the Discord(Mjolnir Studio) community",
+    "Run as admin": "Run as admin permission!",
+    "Not run as admin": "Not running as admin!\nThis error is unusual...please report it to the Discord community immediately!",
+    "Exit App": "Exit App"
 }

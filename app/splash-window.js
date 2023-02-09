@@ -70,5 +70,15 @@ splash = new BrowserWindow
 splash.loadFile('./app/splash/index.html');
 splash.setMenu(null);
 splash.center();
+splash.once('ready-to-show', async () => {
+    splash.show();
+    splash.webContents.send('update_status', `${i.__('Splash Start')}`);
+    if(app.isPackaged){
+        console.log("[INFO] 開始檢查是否有可用更新");
+        require('./common/updater.js');
+    }else{
+        console.warn("[INFO] Dev mode - 略過檢查更新");
+    }
+});
 if(!app.isPackaged)
     splash.webContents.openDevTools();
