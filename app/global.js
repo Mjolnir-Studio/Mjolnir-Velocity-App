@@ -2,7 +2,7 @@
 // Product Name
 global.nodepackage = require('../package.json');
 global.productName = nodepackage.productName;
-
+global.commit = "****************************************************************";
 // Core
 global.pid = 0, // process pid
 global.updater = null;

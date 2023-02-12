@@ -1,7 +1,7 @@
 {
   "name": "mjolnir-velocity",
   "productName": "Mjolnir Velocity",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A modern 3rd-party software used for Riot Games.",
   "main": "index.js",
   "scripts": {

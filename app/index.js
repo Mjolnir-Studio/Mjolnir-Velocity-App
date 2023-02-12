@@ -6,6 +6,12 @@ const i18n = require('./i18n/default_i18n');
 
 log_dir = app.getPath('userData') + '\\logger';
 
+
+console.log(`${commit}`);
+console.log(`App Name: ${productName}`);
+console.log(`App Version: ${app.getVersion()}`);
+console.log(`${commit}`);
+
 if(!app.isPackaged){
     require('electron-reload')(__dirname);
     console.warn("[DEBUG] Dev mode - Enable electron-reload");
