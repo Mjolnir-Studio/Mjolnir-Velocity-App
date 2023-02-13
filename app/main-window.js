@@ -67,7 +67,7 @@ main = new BrowserWindow
     }
 });
 
-main.loadURL(`https://mjolnir.yomisana.xyz/app/velocity/`);
+
 // main.center();
 main.once('ready-to-show', async () => {
     console.log(`[INFO] ${i.__('Mainwindow ready to show')}`);
@@ -79,6 +79,8 @@ main.once('ready-to-show', async () => {
 
 if(!app.isPackaged){
     main.webContents.openDevTools();
+    main.loadURL(`http://127.0.0.1:3333/`);
 }else{
     main.setMenu(null);
+    main.loadURL(`https://mjolnir.yomisana.xyz/app/velocity/`);
 }
