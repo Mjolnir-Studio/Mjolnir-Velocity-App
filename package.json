@@ -6,8 +6,8 @@
   "main": "index.js",
   "scripts": {
     "<<<<<>>>>>": "CI/CD用的，全自動打包",
-    "build-squirrel": "node ./build/build.js",
-    "release-squirrel": "node ./build/release_build.js",
+    "build-nsis": "node ./build/build.js",
+    "release-nsis": "node ./build/release_build.js",
     "<<<<<.>>>>>": "下面的只是打包時所需要的環境變數",
     "bash-build-nsis": "electron-builder --config ./build/config/build-config-nsis.json",
     "bash-release-nsis": "electron-builder --config ./build/config/build-config-nsis.json -w -p always"
