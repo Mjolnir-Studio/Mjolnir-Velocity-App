@@ -7,7 +7,7 @@ splash = new BrowserWindow
     // 窗口標題
     // 如果HTML標籤 <title> 在由...加載的HTML文件中定義 loadURL(), 此屬性將被忽略。
     title: productName,
-    icon: './app/splash/favicon.ico',
+    icon: './app/assets/favicon.ico',
     // darkTheme : true,
     // 透明人間 0.0(完全透明) ~ 1.0 (完全不透明)
     // opacity: 1.0,

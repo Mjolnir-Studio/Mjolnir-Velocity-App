@@ -21,7 +21,12 @@ if(!app.isPackaged){
 app.whenReady().then(async () => {
     // 前置後/前作業
     const instanceLock = app.requestSingleInstanceLock();
-    app.setAppUserModelId('com.mjolnirstudio.velocity');
+    if(!app.isPackaged){
+        app.setAppUserModelId('com.mjolnirstudio.velocitydebug');
+    }else{
+        app.setAppUserModelId('com.mjolnirstudio.velocity');
+    }
+
     await permission.check();
     await i18n.defaultlang();
     // 開始執行視窗作業
