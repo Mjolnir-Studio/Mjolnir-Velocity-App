@@ -37,7 +37,7 @@
 ## 安裝 Mjolnir Velocity
 
 目前僅提供 完整的 Windows 環境  
-🚧未來會推出 MacOS🚧
+🚧未來會推出 MacOS🚧~~(有錢買MacOS回來開發的話)~~
 
 [點我下載軟體也可以!](https://github.com/Mjolnir-Studio/Mjolnir-Velocity/releases/download/v0.0.0/Mjolnir-Velocity-Installer.exe)
 ```yml
