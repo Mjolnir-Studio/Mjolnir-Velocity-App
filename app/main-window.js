@@ -1,6 +1,6 @@
 "use strict";
 const { app, BrowserWindow } = require("electron");
-require('./ipcMain'); 
+require('./ipcMain');
 // Create some window settings
 main = new BrowserWindow
 ({
@@ -37,7 +37,7 @@ main = new BrowserWindow
     // movable: true,
     // 是否可以聚焦窗口與窗口是否可移動相同
     // focusable: true,
-    // if focusable is false, skipTaskbar will false too    
+    // if focusable is false, skipTaskbar will false too
     // skipTaskbar: false, // MacOS Windows
     // 窗口是否在最上層
     // alwaysOnTop: false,
@@ -70,11 +70,11 @@ main = new BrowserWindow
 
 // main.center();
 main.once('ready-to-show', async () => {
-    console.log(`[INFO] ${i.__('Mainwindow ready to show')}`);
+    console.log(`[INFO]  主視窗準備好顯示`);
     main.show();
     splash.destroy();
 
-    main.webContents.send('test',`test message or value`);
+    // main.webContents.send('test',`test message or value`);
 });
 
 if(!app.isPackaged){

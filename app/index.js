@@ -10,6 +10,7 @@ log_dir = app.getPath('userData') + '\\logger';
 console.log(`${commit}`);
 console.log(`App Name: ${productName}`);
 console.log(`App Version: ${app.getVersion()}`);
+console.log(`This app is create from Taiwan so logger use Traditional Chinese(Traditional Chinese/Taiwan) to log backend things to give our dev can soon as soon fixed app`);
 console.log(`${commit}`);
 
 if(!app.isPackaged){
