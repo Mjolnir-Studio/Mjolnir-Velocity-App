@@ -37,7 +37,7 @@
 ## 安裝 Mjolnir Velocity
 
 目前僅提供 完整的 Windows 環境  
-🚧未來會推出 MacOS🚧
+🚧未來會推出 MacOS🚧~~(有錢買MacOS回來開發的話)~~
 
 [點我下載軟體也可以!](https://github.com/Mjolnir-Studio/Mjolnir-Velocity/releases/download/v0.0.0/Mjolnir-Velocity-Installer.exe)
 ```yml
@@ -50,6 +50,10 @@
   - 繁體中文
   - 英文(美國)
 - 啟動時自動更新軟體
+- 不需要極高的資源就可以打造舒適的體驗
+- 快爆氣了嗎?退出遊戲還跳出Riot Games視窗?沒關西我幫你自動關閉
+- 想去廁所但是排了 5 分鐘決定去廁所時出現對戰是否接受時的窘境嗎?沒關西我幫你接受對戰
+  - ~~資金與技術夠的話就會製作遠端操作客戶端軟體，讓你大號也能顧戰局(不包含進遊戲內操作遊戲，僅在選擇英雄介面)~~
 <!-- - 可以選擇是否啟動自動接受對戰 -->
 <!-- -  -->
 
