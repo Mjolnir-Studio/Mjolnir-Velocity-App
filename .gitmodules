@@ -1,0 +1,3 @@
+[submodule "app/backend"]
+	path = app/backend
+	url = https://github.com/Mjolnir-Studio/Mjolnir-Velocity-App-Backend.git

@@ -22,8 +22,8 @@ const $ = {
                         permission = true;
                     }
                 }
+                resolve(true);
             });
-            resolve(true);
         });
     }
 }
