@@ -17,6 +17,8 @@ contextBridge.exposeInMainWorld(
         receive: (channel, func) => {
             let validChannels = [
                 "summoner_icon",
+                "summoner_name",
+                "riotid",
             ];
             if (validChannels.includes(channel)) {
                 // Deliberately strip event as it includes `sender` 
