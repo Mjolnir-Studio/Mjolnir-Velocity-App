@@ -80,7 +80,8 @@ main.once('ready-to-show', async () => {
 if(!app.isPackaged){
     main.webContents.openDevTools();
     // main.loadURL(`http://127.0.0.1:3333/`);
-    main.loadURL(`http://127.0.0.1:5173/`);
+    // main.loadURL(`http://127.0.0.1:5173/`);
+    main.loadURL(`http://127.0.0.1:4000/`);
 }else{
     main.setMenu(null);
     main.loadURL(`https://mjolnir.yomisana.xyz/app/velocity/`);
