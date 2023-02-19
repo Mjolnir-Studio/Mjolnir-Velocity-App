@@ -16,8 +16,7 @@ contextBridge.exposeInMainWorld(
         // 前端接收值所屬的頻道(主程序 => 渲染端)
         receive: (channel, func) => {
             let validChannels = [
-                "test",
-                "test123"
+                "summoner_icon",
             ];
             if (validChannels.includes(channel)) {
                 // Deliberately strip event as it includes `sender` 
