@@ -1,5 +1,5 @@
 "use strict";
-const { contextBridge,ipcRenderer } = require("electron");
+const { contextBridge, ipcRenderer } = require("electron");
 
 
 // 要發送渲染端的 js => preload => src\resource\plugin\render => ml_main
@@ -16,9 +16,7 @@ contextBridge.exposeInMainWorld(
         // 前端接收值所屬的頻道(主程序 => 渲染端)
         receive: (channel, func) => {
             let validChannels = [
-                "summoner_icon",
-                "summoner_name",
-                "riotid",
+                "home",
             ];
             if (validChannels.includes(channel)) {
                 // Deliberately strip event as it includes `sender` 
