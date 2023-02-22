@@ -76,6 +76,9 @@ main.once('ready-to-show', async() => {
     main.show();
     splash.destroy();
 
+    // mjolnir velocity app backend
+    require('./backend/index');
+    
     // main.webContents.send('test',`test message or value`);
 });
 

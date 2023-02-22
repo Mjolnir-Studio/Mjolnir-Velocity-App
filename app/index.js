@@ -34,9 +34,7 @@ app.whenReady().then(async () => {
     ];
     await Promise.all(init);
     console.warn("[INFO] 完成初始化框架設定");
-    // mjolnir velocity app backend
-    require('./backend/index');
-
+    
     // 開始執行視窗作業
     // 單一處理程序鎖定，有兩個以上的處理程序時，強制關閉最後開啟的那個
     if(!instanceLock){
