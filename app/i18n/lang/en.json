@@ -19,5 +19,11 @@
     "Run as admin": "Run as admin permission!",
     "Not run as admin": "Not running as admin!\nThis error is unusual...please report it to the Discord community immediately!",
     "Exit App": "Exit App",
-    "Mainwindow ready to show": "Loading Main ready to show!"
+    "Mainwindow ready to show": "Loading Main ready to show!",
+    "frontend": "XXX前端頁面顯示文字XXX",
+    "client_status.connect": "Connected to games",
+    "client_status.disconnect": "Have not connected to any game",
+    "killriot.title": "End the processing program",
+    "killriot.body": "RiotClientServices has been ended ...",
+    "CtrlD": "複製上面的我是文末"
 }
