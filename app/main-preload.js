@@ -17,6 +17,7 @@ contextBridge.exposeInMainWorld(
         receive: (channel, func) => {
             let validChannels = [
                 "profile",
+                "frontend_data"
             ];
             if (validChannels.includes(channel)) {
                 // Deliberately strip event as it includes `sender` 

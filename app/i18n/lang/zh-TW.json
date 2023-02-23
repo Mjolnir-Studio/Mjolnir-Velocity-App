@@ -19,5 +19,9 @@
     "Run as admin": "以管理員權限執行了!",
     "Not run as admin": "沒有以管理員權限執行!\n會出現這個錯誤很不尋常...請立即回報至Discord社群詢問!",
     "Exit App": "關閉程式",
-    "Mainwindow ready to show": "主畫面準備顯示!"
+    "Mainwindow ready to show": "主畫面準備顯示!",
+    "frontend": "XXX前端頁面顯示文字XXX",
+    "client_status.connect": "連接到支援的遊戲",
+    "client_status.disconnect": "尚未連接到任何遊戲",
+    "CtrlD": "複製上面的我是文末"
 }
