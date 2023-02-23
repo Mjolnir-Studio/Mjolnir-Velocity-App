@@ -1,4 +1,5 @@
 "use strict";
+const {Notification} = require('electron');
 // Product Name
 global.nodepackage = require('../package.json');
 global.productName = nodepackage.productName;
@@ -24,3 +25,8 @@ global.msgbox = require('./common/messagebox.js');
 // i18n
 global.i = require('./i18n/i18n.config.js');
 global.DisplayLang = null;
+
+// Function
+global.callSystemNotify = function (title, body){
+    new Notification({title: title, body: body, hasReply: false,icon: path.join(__dirname,'./assets/logo.png')}).show();
+};

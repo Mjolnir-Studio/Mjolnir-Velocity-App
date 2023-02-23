@@ -23,5 +23,7 @@
     "frontend": "XXX前端頁面顯示文字XXX",
     "client_status.connect": "連接到支援的遊戲",
     "client_status.disconnect": "尚未連接到任何遊戲",
+    "killriot.title": "結束處理程序",
+    "killriot.body": "RiotClientServices 已被結束工作...",
     "CtrlD": "複製上面的我是文末"
 }

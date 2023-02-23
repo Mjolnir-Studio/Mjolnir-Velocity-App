@@ -72,7 +72,7 @@ main = new BrowserWindow({
 
 // main.center();
 main.once('ready-to-show', async() => {
-    console.log(`[INFO]  主視窗準備好顯示`);
+    console.warn(`[INFO]  主視窗準備好顯示`);
     main.show();
     splash.destroy();
 
@@ -84,9 +84,6 @@ main.once('ready-to-show', async() => {
 
 if (!app.isPackaged) {
     main.webContents.openDevTools();
-    // main.loadURL(`http://127.0.0.1:3333/`);
-    // main.loadURL(`http://127.0.0.1:5173/`);
-    // main.loadURL(`http://127.0.0.1:4000/`);
     main.loadURL(`http://127.0.0.1:5500/app/frontend`);
 } else {
     main.setMenu(null);
