@@ -21,9 +21,9 @@
     "Exit App": "Exit App",
     "Mainwindow ready to show": "Loading Main ready to show!",
     "frontend": "XXX前端頁面顯示文字XXX",
-    "client_status.connect": "Connected to games",
+    "client_status.connect": "Connected to league of legends",
     "client_status.disconnect": "Have not connected to any game",
     "killriot.title": "End the processing program",
-    "killriot.body": "RiotClientServices has been ended ...",
+    "killriot.body": "RiotClientServices has been ended",
     "CtrlD": "複製上面的我是文末"
 }
