@@ -1,3 +1,6 @@
 [submodule "app/frontend"]
 	path = app/frontend
 	url = https://github.com/Mjolnir-Studio/Mjolnir-Velocity-App-Frontend.git
+[submodule "app/backend"]
+	path = app/backend
+	url = https://github.com/Mjolnir-Studio/Mjolnir-Velocity-CLI.git
