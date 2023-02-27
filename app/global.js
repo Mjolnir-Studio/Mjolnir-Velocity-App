@@ -4,6 +4,9 @@ const {Notification} = require('electron');
 global.nodepackage = require('../package.json');
 global.productName = nodepackage.productName;
 global.commit = "****************************************************************";
+// global.debug = true; // DEBUG 模式
+global.debug = false; // DEBUG 模式
+
 // Core
 global.pid = 0, // process pid
 global.updater = null;

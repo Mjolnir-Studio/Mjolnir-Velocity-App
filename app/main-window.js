@@ -78,8 +78,16 @@ main.once('ready-to-show', async() => {
 
     // mjolnir velocity app backend
     require('./backend/index');
-    
-    // main.webContents.send('test',`test message or value`);
+    let get_backend_port = setInterval(() => {
+        if(debug)
+            console.log(`[INFO] APP - 等待後端建置完畢...取得expressport...`)
+        if(expressport){
+            clearInterval(get_backend_port);
+            console.log(`[INFO] APP - 取得 CLI port ${expressport}`)
+            // console.log(`[INFO] APP - 程式碼端點轉移至 app/common/renderer`)
+            require('./common/renderer/index');
+        }
+    }, 100);
 });
 
 if (!app.isPackaged) {
