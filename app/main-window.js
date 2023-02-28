@@ -81,7 +81,7 @@ main.once('ready-to-show', async() => {
     let get_backend_port = setInterval(() => {
         if(debug)
             console.log(`[INFO] APP - 等待後端建置完畢...取得expressport...`)
-        if(expressport){
+        if(expressport && lol.init){
             clearInterval(get_backend_port);
             console.log(`[INFO] APP - 取得 CLI port ${expressport}`)
             // console.log(`[INFO] APP - 程式碼端點轉移至 app/common/renderer`)
