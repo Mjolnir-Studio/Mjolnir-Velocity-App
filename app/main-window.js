@@ -84,10 +84,8 @@ main.once('ready-to-show', async() => {
         if(expressport && lol.init){
             clearInterval(get_backend_port);
             console.log(`[INFO] APP - 取得 CLI port ${expressport}`)
+            require('./common/renderer/index');    
             // console.log(`[INFO] APP - 程式碼端點轉移至 app/common/renderer`)
-            setTimeout(() => {
-                require('./common/renderer/index');    
-            }, 1000);
         }
     }, 100);
 });

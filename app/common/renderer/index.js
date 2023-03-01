@@ -18,6 +18,15 @@ const $ = {
       }).on('error', (err) => {
         console.log('發生錯誤：', err.message);
       }); 
+    },
+    renderer_check_init: function(){    
+      let last_status = false
+      setInterval(() => {
+        if(lol.init !== last_status){
+          main.webContents.send('frontend_data', { name: 'profile_done', value: lol.init });
+          last_status = lol.init
+        }  
+      }, 500);
     }
 }
 
@@ -27,8 +36,4 @@ $.get_module(`${backend_url}/summoner/level/current`,"frontend_data","summoner_l
 $.get_module(`${backend_url}/summoner/level/needed`,"frontend_data","summoner_level_needed");
 main.webContents.send('frontend_data', { name: 'summoner_icon', value: `${backend_url}/summoner/icon` });
 main.webContents.send('frontend_data', { name: 'summoner_bg', value: `${backend_url}/summoner/bg` });
-main.webContents.send('frontend_data', { name: 'profile_done', value: true });
-setInterval(() => {
-  if(!lol.init)
-    main.webContents.send('frontend_data', { name: 'profile_done', value: false });
-}, 1000);
+$.renderer_check_init();
