@@ -15,7 +15,7 @@
   </a> -->
 </p>
 
-> Mjolnir Velocity 目前針對英雄聯盟和Valorant，讓玩家輕鬆玩遊戲 來自 Mjolnir Studio
+> Mjolnir Velocity 目前針對英雄聯盟，讓玩家輕鬆玩遊戲 來自 Mjolnir Studio
 
 ***
 ## 取代舊有的 Mjolnir League 軟體。
@@ -29,6 +29,12 @@
 ***
 <!-- > currently for League of Legends and Valorant, making it easy for players to playing games -->
 
+## 已知問題&目前狀況
+### 下一個版本
+1. 將會新增設定頁面
+2. 可以選擇召喚師背景選擇當前客戶端所選取的預設背景與滿版背景
+3. 可以選擇是否開啟自動接受對戰功能
+4. 可以選擇是否開啟關閉遊戲時關閉 RiotClientServices 
 
 <!-- ### 🏠 [Homepage](idkhomepage) -->
 
