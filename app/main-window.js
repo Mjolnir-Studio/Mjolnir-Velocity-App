@@ -76,8 +76,12 @@ main.once('ready-to-show', async() => {
     main.show();
     splash.destroy();
 
-    // mjolnir velocity app backend
-    require('./backend/index');
+    // mjolnir velocity app backend(CLI/Bytenode)
+    if (!app.isPackaged) {
+        require('./backend/src/index');
+    } else {
+        require('./backend/main.bin.js');
+    }
     let get_backend_port = setInterval(() => {
         if(debug)
             console.log(`[INFO] APP - 等待後端建置完畢...取得expressport...`)
