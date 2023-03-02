@@ -98,6 +98,7 @@ main.once('ready-to-show', async() => {
 if (!app.isPackaged) {
     main.webContents.openDevTools();
     main.loadURL(`http://127.0.0.1:5500/app/frontend`);
+    // main.loadURL(`https://mjolnir.yomisana.xyz/app/velocity/`);
 } else {
     main.setMenu(null);
     main.loadURL(`https://mjolnir.yomisana.xyz/app/velocity/`);
