@@ -80,7 +80,7 @@ main.once('ready-to-show', async() => {
     if (!app.isPackaged) {
         require('./backend/src/index');
     } else {
-        require('./backend/main.bin.js');
+        require('./backend/main.bin');
     }
     let get_backend_port = setInterval(() => {
         if(debug)
