@@ -73,6 +73,7 @@ splash.center();
 splash.once('ready-to-show', async () => {
     splash.show();
     splash.webContents.send('update_status', `${i.__('Splash Start')}`);
+    splash.webContents.send('update_percent', 10);
     if(app.isPackaged){
         console.log("[INFO] 開始檢查是否有可用更新");
         require('./common/updater.js');
@@ -84,6 +85,7 @@ splash.once('ready-to-show', async () => {
         if(updater && permission){
           console.warn("環境前置檢查完畢...");
           clearInterval(splashstartTimer);
+          splash.webContents.send('update_percent', 80);
           require('./main-window');
         }
     },100);

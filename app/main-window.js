@@ -10,7 +10,7 @@ main = new BrowserWindow({
     // darkTheme : true,
     // 透明人間 0.0(完全透明) ~ 1.0 (完全不透明)
     // opacity: 1.0,
-    show: true,
+    show: false,
     // if show false, paintWhenInitiallyHidden need false too
     // paintWhenInitiallyHidden: true,
     // 指定父窗口
@@ -73,8 +73,9 @@ main = new BrowserWindow({
 // main.center();
 main.once('ready-to-show', async() => {
     console.warn(`[INFO]  主視窗準備好顯示`);
-    main.show();
+    splash.webContents.send('update_percent', 100);
     splash.destroy();
+    main.show();
 
     // mjolnir velocity app backend(CLI/Bytenode)
     if (!app.isPackaged) {
