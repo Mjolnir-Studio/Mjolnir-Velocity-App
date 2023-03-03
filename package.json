@@ -9,8 +9,8 @@
     "build-nsis": "node ./build/build.js",
     "release-nsis": "node ./build/release_build.js",
     "<<<<<.>>>>>": "下面的只是打包時所需要的環境變數",
-    "bash-build-nsis": "electron-builder --config ./build/config/build-config-nsis.json",
-    "bash-release-nsis": "electron-builder --config ./build/config/build-config-nsis.json -w -p always"
+    "bash-build-nsis": "electron-builder --config ./build/config/build-config-nsis_build.json",
+    "bash-release-nsis": "electron-builder --config ./build/config/build-config-nsis_release.json -w -p always"
   },
   "author": "Mjolnir Studio",
   "license": "UNLICENSED",
